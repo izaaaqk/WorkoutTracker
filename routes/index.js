@@ -48,7 +48,7 @@ router.get('/api/workouts', (req, res) => {
             res.json(data);
         })
         .catch((err) => {
-            res.stats(400).json(err);
+            res.status(400).json(err);
         });
 });
 
